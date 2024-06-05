@@ -1,0 +1,188 @@
+*{
+    margin: 0px;;
+    padding: 3px;;
+    box-sizing: border-box;
+    font-family: "Manrope",sans-serif;
+
+}
+:root{
+    --color-primary:
+    #de5224;
+    --text-primary:
+    #212427;
+    --text-secondary:
+    #e1e0e0;
+
+
+
+}
+
+body{
+    background-image: url("https://media.istockphoto.com/id/1151755587/photo/sunrise-behind-a-tropical-island-in-the-maldives.webp?s=2048x2048&w=is&k=20&c=-Ev7u2HhxKg_PkVlSYFd4sQzmpFTmPPFFBMEewcIZZU=");
+    display:flex;
+    flex-direction:column;;
+    justify-content: space-between;
+    min-height:100vh;
+    height:100%
+
+}
+.logo-container{
+    display:flex;
+    align-items: center;
+    gap: 12px;
+    border: 3px solid black;
+    width:fit-content;
+    background-color:  bisque;
+    padding:12px 36px;
+    font-size: 16px;
+    box-shadow :4px 4px 4px black;
+}
+main{
+    padding: 36px 50px 0 50px;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:3px solid black;
+    width:100%;
+    background-color:  white;
+    padding: 26px;
+    box-shadow: 4px 4px 4px black;
+    gap: 100px
+}
+form{
+    background-color: rgb(188, 235, 235);
+}
+.input-fields{
+    display: flex;
+    justify-content: space-between;
+    gap:26px;
+    width:100%;
+    flex-wrap:wrap;
+
+}
+.input-container{
+    margin-top:40px;
+    box-shadow: 6px 6px 6px black;
+}
+.input-item{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    width:100px;
+}
+label{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+input, textarea{
+    outline: none;
+    border:none;
+    border-bottom: var(--text-primary) 2px solid ;
+}
+button{
+    outline: none;
+    border:none;
+    cursor: pointer;
+
+}
+input::placeholder,textarea,::placeholder{
+    font-size:14px;
+}
+@media only screen and ( max-width:768px ) {
+    form{
+        flex-direction: column;
+        gap:20px;
+    }
+}
+/* LIST STYLES */
+
+.list-container{
+    width: 100%;
+    display: flex;
+
+}
+.card{
+    width: 420px;
+    border: 3px solid black;
+    background-color: white;
+    box-shadow: 4px 4px 4px black;
+    transition: all 0.1s ;
+    min-height: 440px;
+
+}
+.card:hover{
+    background-color: rgba(94, 234, 147, 0.5);
+    transform: translateY(-5px);
+    /* border-start-end-radius:26px; */
+    border-start-start-radius: 20px;
+    border-end-end-radius: 20px;
+    /* border-end-start-radius: 26px; */
+  
+    
+}
+.card img{
+    width: 100%;
+
+
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header-text{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+}
+.card-header-text a{
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-header-text p{
+    font-size: 14px;
+    color: var(--text-primary);
+
+}
+.card-content{
+    padding: 14px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.card-header-action img{
+    width: 18px;
+    height: 18px;
+    cursor:  pointer;
+}
+.card-footer{
+    font-weight: bold;
+}
+.main-container{
+    display: flex;
+}
+.item{
+    background-image: url("https://media.istockphoto.com/id/1292399669/photo/aerial-photograph-rural-landscape-farms-villages-picturesque-green-patchwork-pasture.jpg?s=2048x2048&w=is&k=20&c=ri_sb88QRFAPMA3ueqexfrS_A30aY-KqXSsKexbuz-Y=");
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: dashed;
+    border-block: 3PX solid black;
+    gap:5px;
+
+    
+}
+.item img{
+    width: 35px;
+    /* background-image: url("https://media.istockphoto.com/id/1359349136/photo/hawaiian-sunset-with-sailboat-and-mountains.jpg?s=2048x2048&w=is&k=20&c=M1wlkXFAhkxIDfGR8yTWb2WTSFHmCJRMq5adn7BT0M4="); */
+}
+#mahal:hover{
+    background-color: rgba(234, 113, 94, 0.5)
+}
+#great:hover{
+    background-color: rgba(234, 94, 225, 0.5);
+}
